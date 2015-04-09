@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>jonathan sampson's spectutor</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<style>
+			body {
+				padding-top: 2em;
+			}
+			video {
+				width: 100%;
+				height: 300px;
+				background: #313131;
+			}
+		</style>
+		<script>
+			$(function () {
+
+				$('.dropdown-toggle').dropdown();
+
+			});
+		</script>
+	</head>
+	<body>
+
+		<div class="container">
+			<header>
+				<nav>
+					<ul class="list-inline text-right">
+						<li>HTML</li>
+						<li>JavaScript</li>
+						<li>DOM</li>
+						<li>CSS 2.1</li>
+						<li>CSS Selectors</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="row">
+				<main class="col-md-6 col-md-push-3">
+					<section>
+						<h1 class="text-lowercase">The <code>&lt;SECTION&gt;</code> Element</h1>
+						<p>The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading (h1-h6 element) as a child of the section element.</p>
+						<video></video>
+						<h4>Example Code:</h4>
+<pre>&lt;section&gt;
+    &lt;h1&gt;Section Title&lt;/h1&gt;
+    &lt;p&gt;Text that describes this section.&lt;/p&gt;
+&lt;/section&gt;</pre>
+					</section>
+				</main>
+				<nav class="col-md-3 col-md-pull-6">
+					<ul class="list-group">
+						<li class="list-group-item">
+							<span class="badge">20</span>
+							Global Attributes
+						</li>
+						<li class="list-group-item">
+							<span class="badge">1</span>
+							The Root Element
+						</li>
+						<li class="list-group-item">
+							<span class="badge">5</span>
+							Document Metadata
+						</li>
+						<li class="list-group-item">
+							<span class="badge">14</span>
+							<strong>Section Elements</strong>
+							<ul>
+								<li>body</li>
+								<li>article</li>
+								<li><strong>section</strong></li>
+								<li>nav</li>
+								<li>aside</li>
+								<li>h1 to h6</li>
+								<li>header</li>
+								<li>footer</li>
+								<li>address</li>
+							</ul>
+						</li>
+						<li class="list-group-item">
+							<span class="badge">14</span>
+							Grouping Content
+						</li>
+						<li class="list-group-item">
+							<span class="badge">30</span>
+							Text-level Semantics
+						</li>
+						<li class="list-group-item">
+							<span class="badge">2</span>
+							Linking Elements
+						</li>
+						<li class="list-group-item">
+							<span class="badge">2</span>
+							Editing Indicators
+						</li>
+						<li class="list-group-item">
+							<span class="badge">13</span>
+							Embedded Content
+						</li>
+						<li class="list-group-item">
+							<span class="badge">10</span>
+							Tabular Data
+						</li>
+						<li class="list-group-item">
+							<span class="badge">15</span>
+							Forms and Input
+						</li>
+						<li class="list-group-item">
+							<span class="badge">4</span>
+							Interactive Elements
+						</li>
+						<li class="list-group-item">
+							<span class="badge">4</span>
+							Scripting Elements
+						</li>
+					</ul>
+				</nav>
+				<aside class="col-md-3">
+					<h1 class="text-muted text-lowercase">Support</h1>
+					<p>Some elements and/or features may have varying degrees of support in browsers. Tests are included below. Please <a href="#">report</a> any test issues.</p>
+					<div class="btn-group btn-block">
+						<button
+							type="button"
+							class="btn btn-default dropdown-toggle btn-block"
+							aria-expanded="false" data-toggle="dropdown">
+								Current Browser <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu btn-block" role="menu">
+							<li hidden><a href="#">Current Browser</a></li>
+							<li><a href="#">Google Chrome</a></li>
+							<li><a href="#">Internet Explorer</a></li>
+							<li><a href="#">Mozilla Firefox</a></li>
+							<li><a href="#">Apple Safari</a></li>
+							<li><a href="#">Project Spartan</a></li>
+						</ul>
+					</div>
+
+					<div class="text-center" style="font-size: 5em; padding-top: 1rem; padding-bottom: 1rem;">75%</div>
+
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>
+									<span class="glyphicon glyphicon-eye-open"></span> 
+									<a href="#modal1" data-toggle="modal" data-target="#modal1">feature foo</a>
+									<div class="modal fade" id="modal1">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">feature foo passed</div>
+												<div class="modal-body">
+													<pre>function foo ( a ) { return a > 5; }</pre>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-warning" data-dismiss="modal">Report Issue</button>
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td class="text-right text-success">pass</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="glyphicon glyphicon-eye-open"></span> 
+									<a href="#modal2" data-toggle="modal" data-target="#modal2">Type-Retention</a>
+									<div class="modal fade" id="modal2">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h1>Type-Retention</h1>
+													<p>This test determines whether the <code>"number"</code> type is retained on an <code>input</code> element. If it is not, the input type is unsupported. In some cases, type-rentention could result in false-positives.</p>
+												</div>
+												<div class="modal-body">
+<pre>
+function test () {
+  var el = document.createElement( "input" );
+      el.type = "number";
+  return "number" === el.type;
+}</pre>
+													<p>Result: <span class="text-success">Passed</span></p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-warning" data-dismiss="modal">Report Issue</button>
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td class="text-right text-success">pass</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="glyphicon glyphicon-eye-open"></span> 
+									failed feature
+								</td>
+								<td class="text-right text-danger">fail</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="glyphicon glyphicon-eye-open"></span> 
+									pass feat
+								</td>
+								<td class="text-right text-success">pass</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</aside>
+			</div>
+
+		</div>
+
+	</body>
+</html>
