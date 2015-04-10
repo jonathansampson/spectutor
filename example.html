@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>web-developer's spectutor</title>
+		<title>Spectutor</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -9,127 +9,130 @@
 		<style>
 			body {
 				padding-top: 2em;
+				padding-bottom: 2em;
 			}
 			video {
 				width: 100%;
-				height: 300px;
+				height: 367px;
 				background: #313131;
+			}
+			.score {
+				font-size: 5em;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+			.modal {
+				font-size: 133.3333%;
+			}
+			.support {
+				color: red;
+				-webkit-animation: pulsate .5s ease-in-out infinite alternate;
+			}
+			@-webkit-keyframes pulsate {
+				to { transform: scale(1.25); }
 			}
 		</style>
 		<script>
 			$(function () {
-
 				$('.dropdown-toggle').dropdown();
-
 			});
 		</script>
 	</head>
 	<body>
 
 		<div class="container">
-			<header>
-				<h1>web-developer's spectutor</h1>
-				<ul class="list-inline text-right">
-					<li>HTML</li>
-					<li>JavaScript</li>
-					<li>DOM</li>
-					<li>CSS 2.1</li>
-					<li>CSS Selectors</li>
-				</ul>
+
+			<header class="row">
+
+				<div class="col-md-9">
+					<h1 style="margin-top: 0">Spectutor</h1>
+					<p>Learn the tech, from the spec.</p>
+				</div>
+
+				<form class="col-md-3">
+					<div class="form-group">
+						<input type="search" id="searchInput" placeholder="progress" class="form-control" />
+					</div>
+					<p class="text-center">
+						<a href="#">support <span class="support glyphicon glyphicon-heart"></span> spectutor</a>
+					</p>
+				</form>
+
 			</header>
+
+			<nav class="row">
+				<ul class="nav nav-tabs">
+					<li role="presentation"><a href="#">About Spectutor</a></li>
+					<li role="presentation" class="active"><a href="#">HTML</a></li>
+					<li role="presentation"><a href="#">CSS</a></li>
+					<li role="presentation"><a href="#">JavaScript</a></li>
+				</ul>
+			</nav>
+
 			<div class="row">
-				<main class="col-md-6 col-md-push-3">
-					<section>
-						<h1 class="text-lowercase">The <code>&lt;SECTION&gt;</code> Element</h1>
+				
+				<nav class="col-md-2">
+
+					<ul class="list-unstyled" style="margin-top: 1em;">
+						<li><a href="#">Global Attributes</a></li>
+						<li><a href="#">The Root Element</a></li>
+						<li><a href="#">Document Metadata</a></li>
+						<li>
+							<strong>Section Elements</strong>
+							<ul>
+								<li><a href="#">body</a></li>
+								<li><a href="#">article</a></li>
+								<li><strong>section</strong></li>
+								<li><a href="#">nav</a></li>
+								<li><a href="#">aside</a></li>
+								<li><a href="#">h1 to h6</a></li>
+								<li><a href="#">header</a></li>
+								<li><a href="#">footer</a></li>
+								<li><a href="#">address</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Grouping Content</a></li>
+						<li><a href="#">Text-level Semantics</a></li>
+						<li><a href="#">Linking Elements</a></li>
+						<li><a href="#">Editing Indicators</a></li>
+						<li><a href="#">Embedded Content</a></li>
+						<li><a href="#">Tabular Data</a></li>
+						<li><a href="#">Forms and Input</a></li>
+						<li><a href="#">Interactive Elements</a></li>
+						<li><a href="#">Scripting Elements</a></li>
+					</ul>
+
+				</nav>
+
+				<main class="col-md-7">
+
+					<article>
+
+						<h3>The <code>&lt;section&gt;</code> element</h3>
+						<p>Parent Specification: HTML 5.1 (Working Draft)</p>
+
 						<p>The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading (h1-h6 element) as a child of the section element.</p>
+
 						<video></video>
-						<p><strong>Example Code:</strong></p>
+
+						<p><strong>Sample Code:</strong></p>
 <pre>&lt;section&gt;
     &lt;h1&gt;Section Title&lt;/h1&gt;
     &lt;p&gt;Text that describes this section.&lt;/p&gt;
 &lt;/section&gt;</pre>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur urna a odio pretium congue. Etiam tortor metus, lacinia id convallis eu, pellentesque a felis. Nunc leo lorem, interdum vel ultrices eget, tincidunt vitae risus. Pellentesque scelerisque cursus lacinia. Curabitur quis porttitor urna. Donec mi nisi, faucibus iaculis lacinia a, suscipit eget eros. Nam vel ligula blandit, interdum risus quis, accumsan erat. Pellentesque in diam sed elit fringilla aliquet at eget velit. Curabitur orci est, sagittis vel massa in, fringilla vestibulum tellus. Vestibulum elit lacus, cursus eget odio eget, faucibus interdum eros. Duis placerat semper convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sodales arcu a aliquam condimentum. Fusce commodo finibus lectus, at fermentum eros porttitor a.</p>
 
-						<p>Nam scelerisque orci ac eros varius rhoncus. Integer sed nisi nec enim finibus vulputate. Praesent laoreet magna imperdiet, tempor magna eget, consectetur tellus. Aliquam sed tellus eget diam consequat tincidunt in sit amet nisi. Morbi pulvinar porttitor enim ac accumsan. Cras sed suscipit tortor, vel finibus velit. Aliquam lobortis laoreet mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque molestie eros non sollicitudin pretium. Vestibulum ultrices placerat ex, id laoreet erat commodo in. Sed nec diam id felis hendrerit ullamcorper. Aenean blandit nisl ac faucibus pretium. In pharetra eleifend ex a ullamcorper. Pellentesque id blandit ex. Vivamus porttitor scelerisque dolor, in tincidunt elit interdum sit amet. Suspendisse porttitor tempor est, id fermentum justo.</p>
+						<p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the aria-hidden="true" attribute.</p>
 
-						<p>Vestibulum sollicitudin massa erat, ut luctus urna hendrerit ac. Fusce suscipit pellentesque justo a dapibus. Etiam ac risus auctor, convallis enim non, ultrices purus. Vivamus commodo non est eu euismod. Pellentesque in orci vitae sem euismod aliquam. Sed ac quam non tortor tristique mollis. Nulla facilisi. Cras commodo lectus in mi faucibus vehicula. Proin consequat, risus non tincidunt ultricies, tellus neque porta purus, commodo pulvinar mi sem non mauris. Duis elit ex, pretium in interdum vitae, interdum in purus. Duis arcu lectus, aliquam sed felis ac, efficitur sodales quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi consectetur dolor ac imperdiet consectetur. Vivamus ultricies enim mauris, a dictum est varius vitae.</p>
-
-						<p>Etiam et imperdiet felis, eu aliquam elit. Mauris pretium metus sit amet diam venenatis aliquam. Nulla facilisi. Ut sed viverra tellus, ac pulvinar ex. In eleifend eget ligula in cursus. Donec vitae posuere urna, non vehicula massa. Suspendisse ex dolor, euismod at quam vel, condimentum iaculis justo. Aenean ligula orci, mollis vitae porta vel, sagittis ut nulla. Mauris consequat tortor commodo, mollis libero quis, sodales dui. Aliquam lacinia nunc nulla, a vehicula dui dictum at. In turpis ante, pharetra in eros vel, aliquet gravida nulla. Donec tristique neque sed egestas fringilla. Mauris laoreet, nisi id tincidunt ullamcorper, ante ex hendrerit dui, eu condimentum ante turpis ut est. Ut fermentum dolor sit amet leo tempus, vitae varius velit porta.</p>
-
-						<p>Fusce sed arcu vehicula, porta ante id, ornare justo. Sed sit amet volutpat felis. Suspendisse viverra felis fermentum tellus vehicula molestie. Duis rhoncus luctus elit, vel volutpat felis rutrum eu. Aliquam vitae elementum felis, posuere hendrerit dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque varius enim in faucibus tincidunt.</p>
-					</section>
+					</article>
 
 				</main>
-				<nav class="col-md-3 col-md-pull-6">
-					<ul class="list-group">
-						<li class="list-group-item">
-							<span class="badge">20</span>
-							Global Attributes
-						</li>
-						<li class="list-group-item">
-							<span class="badge">1</span>
-							The Root Element
-						</li>
-						<li class="list-group-item">
-							<span class="badge">5</span>
-							Document Metadata
-						</li>
-						<li class="list-group-item">
-							<span class="badge">14</span>
-							<strong>Section Elements</strong>
-							<ul>
-								<li>body</li>
-								<li>article</li>
-								<li><strong>section</strong></li>
-								<li>nav</li>
-								<li>aside</li>
-								<li>h1 to h6</li>
-								<li>header</li>
-								<li>footer</li>
-								<li>address</li>
-							</ul>
-						</li>
-						<li class="list-group-item">
-							<span class="badge">14</span>
-							Grouping Content
-						</li>
-						<li class="list-group-item">
-							<span class="badge">30</span>
-							Text-level Semantics
-						</li>
-						<li class="list-group-item">
-							<span class="badge">2</span>
-							Linking Elements
-						</li>
-						<li class="list-group-item">
-							<span class="badge">2</span>
-							Editing Indicators
-						</li>
-						<li class="list-group-item">
-							<span class="badge">13</span>
-							Embedded Content
-						</li>
-						<li class="list-group-item">
-							<span class="badge">10</span>
-							Tabular Data
-						</li>
-						<li class="list-group-item">
-							<span class="badge">15</span>
-							Forms and Input
-						</li>
-						<li class="list-group-item">
-							<span class="badge">4</span>
-							Interactive Elements
-						</li>
-						<li class="list-group-item">
-							<span class="badge">4</span>
-							Scripting Elements
-						</li>
-					</ul>
-				</nav>
+				
 				<aside class="col-md-3">
-					<h1 class="text-muted text-lowercase">Support</h1>
+
+					<h3 class="text-muted text-lowercase">Reliability</h3>
+
 					<p>Some elements and/or features may have varying degrees of support in browsers. Tests are included below. Please <a href="#">report</a> any test issues.</p>
+
 					<div class="btn-group btn-block">
 						<button
 							type="button"
@@ -147,123 +150,102 @@
 						</ul>
 					</div>
 
-					<div class="text-center" style="font-size: 5em; padding-top: 1rem; padding-bottom: 1rem;">90%</div>
+					<div class="text-center score">90%</div>
 
 					<table class="table">
 						<tbody>
 							<tr>
 								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
 									<a href="#modal1" data-toggle="modal" data-target="#modal1">feature foo</a>
-									<div class="modal fade" id="modal1">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">feature foo passed</div>
-												<div class="modal-body">
-													<pre>function foo ( a ) { return a > 5; }</pre>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-warning" data-dismiss="modal">Report Issue</button>
-													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-												</div>
-											</div>
-										</div>
-									</div>
 								</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
 								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
 									<a href="#modal2" data-toggle="modal" data-target="#modal2">Type-Retention</a>
-									<div class="modal fade" id="modal2">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h1>Type-Retention</h1>
-													<p>This test determines whether the <code>"number"</code> type is retained on an <code>input</code> element. If it is not, the input type is unsupported. In some cases, type-rentention could result in false-positives.</p>
-												</div>
-												<div class="modal-body">
-<pre>
-function test () {
-  var el = document.createElement( "input" );
-      el.type = "number";
-  return "number" === el.type;
-}</pre>
-													<p>Result: <span class="text-success">Passed</span></p>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-warning" data-dismiss="modal">Report Issue</button>
-													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-												</div>
-											</div>
-										</div>
-									</div>
 								</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									failed feature
-								</td>
+								<td>failed feature</td>
 								<td class="text-right text-danger">fail</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									pass feat
-								</td>
+								<td>pass feat</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									failed feature
-								</td>
+								<td>failed feature</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									pass feat
-								</td>
+								<td>pass feat</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									failed feature
-								</td>
+								<td>failed feature</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									pass feat
-								</td>
+								<td>pass feat</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									failed feature
-								</td>
+								<td>failed feature</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 							<tr>
-								<td>
-									<span class="glyphicon glyphicon-eye-open"></span> 
-									pass feat
-								</td>
+								<td>pass feat</td>
 								<td class="text-right text-success">pass</td>
 							</tr>
 						</tbody>
 					</table>
 
 				</aside>
+
 			</div>
 
+			<footer class="row text-center">Content &copy; 2015</footer>
+
+		</div>
+
+		<div class="modal fade" id="modal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">feature foo passed</div>
+					<div class="modal-body">
+						<pre>function foo ( a ) { return a > 5; }</pre>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Report Issue</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Type-Retention</h1>
+						<p>This test determines whether the <code>"number"</code> type is retained on an <code>input</code> element. If it is not, the input type is unsupported. In some cases, type-rentention could result in false-positives.</p>
+					</div>
+					<div class="modal-body">
+				<pre>
+function test () {
+	var el = document.createElement( "input" );
+	el.type = "number";
+	return "number" === el.type;
+}</pre>
+						<p>Result: <span class="text-success">Passed</span></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Report Issue</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</body>
