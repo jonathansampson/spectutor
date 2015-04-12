@@ -7,13 +7,16 @@
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<style>
+			div.container {
+				margin-bottom: 10em;
+			}
 			body {
 				padding-top: 2em;
 				padding-bottom: 2em;
 			}
 			video {
 				width: 100%;
-				height: 367px;
+				height: 367px; height: 294px;
 				background: #313131;
 			}
 			.score {
@@ -31,6 +34,17 @@
 			@-webkit-keyframes pulsate {
 				to { transform: scale(1.25); }
 			}
+			.browser-support .report {
+				text-align: center;
+			}
+			.browser-support .report + .report {
+				color: #666;
+				border-left: 1px solid #CCC;
+				border-bottom: 1px solid #CCC;
+				background-image: 
+					linear-gradient( to left, white, transparent ),
+					linear-gradient( to top, #f1f1f1, transparent );
+			}
 		</style>
 		<script>
 			$(function () {
@@ -39,6 +53,115 @@
 		</script>
 	</head>
 	<body>
+
+		<div class="container">
+
+			<div class="col-md-2">
+
+				<ul class="list-unstyled" style="margin-top: 20px;">
+					<li><a href="#">Global Attributes</a></li>
+					<li><a href="#">The Root Element</a></li>
+					<li><a href="#">Document Metadata</a></li>
+					<li>
+						<strong>Section Elements</strong>
+						<ul>
+							<li><a href="#">body</a></li>
+							<li><a href="#">article</a></li>
+							<li><strong>section</strong></li>
+							<li><a href="#">nav</a></li>
+							<li><a href="#">aside</a></li>
+							<li><a href="#">h1 to h6</a></li>
+							<li><a href="#">header</a></li>
+							<li><a href="#">footer</a></li>
+							<li><a href="#">address</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Grouping Content</a></li>
+					<li><a href="#">Text-level Semantics</a></li>
+					<li><a href="#">Linking Elements</a></li>
+					<li><a href="#">Editing Indicators</a></li>
+					<li><a href="#">Embedded Content</a></li>
+					<li><a href="#">Tabular Data</a></li>
+					<li><a href="#">Forms and Input</a></li>
+					<li><a href="#">Interactive Elements</a></li>
+					<li><a href="#">Scripting Elements</a></li>
+				</ul>
+
+			</div>
+			<div class="col-md-10">
+
+				<div class="row">
+					<h1>The <code>&lt;section&gt;</code> Element</h1>
+					<div class="col-md-4 col-md-push-8">
+						<p>Video summary will be located here in this area. This will share with the user a general summary of the video seen to the left.</p>
+						<p>Users should be able to get the <em>gist</em> of the video content by reading these paragraphs.</p>
+						<p>This data will be stored in a JSON file, and will require a full-site rebuild when modified.</p>
+					</div>
+					<div class="col-md-8 col-md-pull-4">
+						<video></video>
+					</div>
+				</div>
+				<div class="row browser-support">
+					<div class="row">
+						<h3>Browser Support &amp; Tests (13)</h3>
+						<div class="col-md-2 report">
+							<h1>98%</h1>
+							<p>Current</p>
+						</div>
+						<div class="col-md-2 report">
+							<h1>98%</h1>
+							<p>Chrome</p>
+						</div>
+						<div class="col-md-2 report">
+							<h1>98%</h1>
+							<p>Explorer</p>
+						</div>
+						<div class="col-md-2 report">
+							<h1>98%</h1>
+							<p>Firefox</p>
+						</div>
+						<div class="col-md-2 report">
+							<h1>98%</h1>
+							<p>Spartan</p>
+						</div>
+						<div class="col-md-2 report">
+							<h1>98%</h1>
+							<p>Safari</p>
+						</div>
+					</div>
+					<div class="row">
+						<table class="table table-striped" style="margin-top: 1em">
+							<thead>
+								<tr>
+									<th>Test Name</th>
+									<th>Expected</th>
+									<th>Actual</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>The <code>&quot;number&quot;</code> value for the <code>type</code> attribute is retained.</td>
+									<td><code>&quot;number&quot;</code></td>
+									<td><code>&quot;number&quot;</code></td>
+								</tr>
+								<tr>
+									<td>The <code>stepUp</code> method increments the value.</td>
+									<td><code>&quot;1&quot;</code></td>
+									<td><code>&quot;0&quot;</code></td>
+								</tr>
+								<tr>
+									<td>The <code>stepDown</code> method de-increments the value.</td>
+									<td><code>&quot;-1&quot;</code></td>
+									<td><code>&quot;0&quot;</code></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
 
 		<div class="container">
 
