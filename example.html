@@ -45,6 +45,12 @@
 					linear-gradient( to left, white, transparent ),
 					linear-gradient( to top, #f1f1f1, transparent );
 			}
+			.glyphicon-thumbs-up {
+				color: green;
+			}
+			.glyphicon-thumbs-down {
+				color: red;
+			}
 		</style>
 		<script>
 			$(function () {
@@ -91,7 +97,7 @@
 			<div class="col-md-10">
 
 				<div class="row">
-					<h1>The <code>&lt;section&gt;</code> Element</h1>
+					<h1>The Section Element</h1>
 					<div class="col-md-4 col-md-push-8">
 						<p>Video summary will be located here in this area. This will share with the user a general summary of the video seen to the left.</p>
 						<p>Users should be able to get the <em>gist</em> of the video content by reading these paragraphs.</p>
@@ -130,7 +136,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<table class="table table-striped" style="margin-top: 1em">
+						<table class="table" style="margin-top: 1em">
 							<thead>
 								<tr>
 									<th>Test Name</th>
@@ -140,17 +146,17 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>The <code>&quot;number&quot;</code> value for the <code>type</code> attribute is retained.</td>
+									<td><span class="glyphicon glyphicon-thumbs-up"></span> The <code>&quot;number&quot;</code> value for the <code>type</code> attribute is retained.</td>
 									<td><code>&quot;number&quot;</code></td>
 									<td><code>&quot;number&quot;</code></td>
 								</tr>
 								<tr>
-									<td>The <code>stepUp</code> method increments the value.</td>
+									<td><span class="glyphicon glyphicon-thumbs-down"></span> The <code>stepUp</code> method increments the value.</td>
 									<td><code>&quot;1&quot;</code></td>
 									<td><code>&quot;0&quot;</code></td>
 								</tr>
 								<tr>
-									<td>The <code>stepDown</code> method de-increments the value.</td>
+									<td><span class="glyphicon glyphicon-thumbs-down"></span> The <code>stepDown</code> method de-increments the value.</td>
 									<td><code>&quot;-1&quot;</code></td>
 									<td><code>&quot;0&quot;</code></td>
 								</tr>
