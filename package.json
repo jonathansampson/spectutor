@@ -1,0 +1,22 @@
+{
+  "name": "SpecTutor",
+  "version": "1.0.0",
+  "description": "Learn the tech, from the spec.",
+  "main": "index.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathansampson/spectutor.git"
+  },
+  "author": "Jonathan Sampson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathansampson/spectutor/issues"
+  },
+  "homepage": "https://github.com/jonathansampson/spectutor",
+  "dependencies": {
+    "googleapis": "^2.1.6"
+  }
+}
